@@ -1,0 +1,158 @@
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.topImage {
+  position: relative;
+}
+
+.topImage img {
+  width: 100%;
+}
+
+.topImage .imageText {
+  position:absolute;
+  top: 250px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.katanakajiImage {
+  position: relative;
+}
+
+.katanakajiImage img {
+  width: 600px;
+  height: 400px;
+  margin-left: 600px;
+}
+
+.katanakajiImage .imageText {
+  position:absolute;
+  top: 20px;
+  left: 20;
+  font-size: 25px;
+}
+
+.katanakajiImage .imageText p {
+  margin: 0 0;
+}
+
+.container__tachiUchigatana {
+  display: flex;
+  margin: 50px 100px 50px 100px;
+}
+
+.container__tachiUchigatana img {
+  flex-grow: 1;
+}
+
+.tachiUchigatana__imageText {
+  flex-grow: 1;
+  padding-left: 100px;
+}
+
+.container__imageText p {
+  margin: 0 0;
+}
+
+.container__tenkaGoken {
+  display: flex;
+  justify-content: center;
+}
+
+/*.tenkagoken__imageText {
+  flex-grow: 1;
+}*/
+
+/*.container__tenkaGoken img {
+  flex-grow: 1;
+}*/
+
+.image__tenkaGoken {
+  padding-left: 100px;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content:center
+}
+
+.card__container h2 {
+  text-align: center
+}
+
+.card {
+  margin: 10px 10px 10px 10px;
+}
+
+.button a {
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.button a:hover {
+  background: #313131;
+  color: #FFF;
+}
+.button a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+.button a:hover:after {
+  border-color: #FFF;
+}
+
+.yokoduna__wrapper {
+  display: flex;
+  justify-content:center
+}
+
+.yokoduna {
+  margin: 10px 10px 10px 10px;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+ul.footerMenu li {
+display: inline;
+}
+
+.image__tachiUchigatana img {
+  height: 300px;
+}
+
+.image__tenkaGoken img {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
